@@ -150,27 +150,3 @@ public class Hello {
 	</target>
 </project>
 
-
-
-
-<?xml version="1.0" encoding="UTF-8"?>
-
-<ivy-settings>
-
-  <settings defaultResolver="main" />
-
-  <!--Authentication required for publishing (deployment). 'Artifactory Realm' is the realm used by Artifactory so don't change it.-->
-
-  <credentials host="localhost" realm="Artifactory Realm" username="${security.getCurrentUsername()}" passwd="${security.getEncryptedPassword()!"*** Insert encrypted password here ***"}" />
-
-  <resolvers>
-
-    <chain name="main">
-
-      <ibiblio name="public" m2compatible="true" root="http://localhost:8081/artifactory/libs-release" />
-
-    </chain>
-
-  </resolvers>
-
-</ivy-settings>
